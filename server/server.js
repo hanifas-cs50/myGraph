@@ -21,7 +21,7 @@ app.use(express.json())
 app.use("http://localhost:5000/api/data", dataRoutes)
 
 // connect to db
-mongoose.connect(process.env.MONGO_URI)
+mongoose.connect(process.env.MONGODB_URI)
   .then(() => {
     // listen for requests
     app.listen(process.env.PORT, () => {

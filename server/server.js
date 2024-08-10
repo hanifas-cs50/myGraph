@@ -18,7 +18,7 @@ app.use(cors(corsOptions));
 app.use(express.json())
 
 // routes
-app.use("http://localhost:5000/api/data", dataRoutes)
+app.use("/api/data", dataRoutes)
 
 // connect to db
 mongoose.connect(process.env.MONGODB_URI)

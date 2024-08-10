@@ -34,7 +34,7 @@ export default function Form() {
       setEatVeggie(false)
       setError(null)
       dispatch({type: "CREATE_DATA", payload: json})
-      navigate("/test", { replace: true })
+      navigate("/", { replace: true })
     }
   }
 

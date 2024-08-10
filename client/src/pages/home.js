@@ -8,7 +8,7 @@ export default function Home() {
   
   useEffect(() => {
     const fetchDatas = async () => {
-      const response = await fetch("http://localhost:5000/api/data")
+      const response = await fetch("https://my-graph.vercel.app/api/data/")
       const json = await response.json()
       
       if (response.ok) {

@@ -9,9 +9,9 @@ const dataRoutes = require("./routes/dataRoutes")
 const app = express()
 
 // middleware
-const corsOptions = {
-  origin: "http://localhost:3000" // frontend URI (ReactJS)
-}
+// const corsOptions = {
+//   origin: "http://localhost:3000" // frontend URI (ReactJS)
+// }
 
 // middleware
 app.use(cors(corsOptions));

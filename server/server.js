@@ -9,12 +9,12 @@ const dataRoutes = require("./routes/dataRoutes")
 const app = express()
 
 // middleware
-// const corsOptions = {
-//   origin: "http://localhost:3000" // frontend URI (ReactJS)
-// }
+const corsOptions = {
+  origin: "https://hanifmygraph-afs6tqfmo-hanifascs50s-projects.vercel.app" // frontend URI (ReactJS)
+}
 
 // middleware
-// app.use(cors(corsOptions));
+app.use(cors(corsOptions));
 app.use(express.json())
 
 // routes

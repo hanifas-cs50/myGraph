@@ -10,7 +10,9 @@ const app = express()
 
 // middleware
 const corsOptions = {
-  origin: "https://hanifmygraph-afs6tqfmo-hanifascs50s-projects.vercel.app" // frontend URI (ReactJS)
+  origin: "https://hanifmygraph-afs6tqfmo-hanifascs50s-projects.vercel.app",
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  preflightContinue: false
 }
 
 // middleware

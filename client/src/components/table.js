@@ -4,7 +4,7 @@ export default function DataSingle({ data_info }) {
   const { dispatch } = useDataContext()
 
   const handleClick = async () => {
-    const response = await fetch("/api/data/" + data_info._id, {
+    const response = await fetch("https://my-graph.vercel.app/api/data/" + data_info._id, {
       method: "DELETE"
     })
     const json = await response.json()

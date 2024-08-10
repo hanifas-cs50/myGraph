@@ -15,7 +15,7 @@ export default function Form() {
 
     const load = { user: "anon", color: colour, flavour, eatVeggie }
 
-    const response = await fetch("http://localhost:5000/api/data", {
+    const response = await fetch("https://my-graph.vercel.app/api/data/", {
       method: "POST",
       body: JSON.stringify(load),
       headers: {

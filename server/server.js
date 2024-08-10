@@ -19,6 +19,7 @@ app.use(express.json())
 
 // routes
 app.use("/api/data", dataRoutes)
+app.get("/api/data/", { msg: "Test" })
 
 // connect to db
 mongoose.connect(process.env.MONGODB_URI)

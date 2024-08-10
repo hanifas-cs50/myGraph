@@ -10,7 +10,7 @@ const app = express()
 
 // middleware
 const corsOptions = {
-  origin: "https://hanifmygraph-m9b1i112u-hanifascs50s-projects.vercel.app/",
+  origin: "https://hanifmygraph-hanifascs50s-projects.vercel.app",
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   preflightContinue: false
 }

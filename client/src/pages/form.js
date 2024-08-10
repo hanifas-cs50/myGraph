@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom"
 import { useDataContext } from "../hooks/useDataContext";
 
 export default function Form() {
-  const { dispatch } = useDataContext
+  const { dispatch } = useDataContext();
   const navigate = useNavigate();
   const [colour, setColour] = useState("Red")
   const [flavour, setFlavour] = useState("Sweet")
